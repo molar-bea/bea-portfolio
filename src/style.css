@@ -107,8 +107,7 @@ a.active, a:hover{
         text-align: center;
         top: 50px;
         left: -100%;
-        transition: all 0.5s;
-        
+        transition: all 0.5s;  
     }
     a.active, a:hover{
         background-color: #737373;
@@ -271,7 +270,7 @@ img {
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(10,1fr);
     width: 100%;
-    height: 100hv;
+    height: 100vh;
 }
 
 .a-item-1{
@@ -284,7 +283,7 @@ img {
 }
 
 .a-item-2{
-    grid-area: 2 / 1 / 5 / 5;
+    grid-area: 2 / 1 / 7 / 11;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,9 +296,11 @@ img {
     box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516);
     overflow: hidden;
 }
-.a-item-3{
-    grid-area: 2 / 6 / 5 / 10;
-    overflow: hidden;
+
+.about-text-container{
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    
 }
 
 /*PORTFOLIO SECTION*/
@@ -308,7 +309,7 @@ img {
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(10, 1fr); 
     width: 100%;
-    height:100hv;
+    height:100vh;
     justify-content: center;
     
     
