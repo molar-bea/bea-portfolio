@@ -26,7 +26,7 @@ nav{
 
 label.logo{
     color: #ffffff;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 15px;
     padding: 0 100px;
     font-weight: bold;
@@ -88,9 +88,15 @@ a.active, a:hover{
         padding: 50;
         opacity:1;
     }
+
+    label.logo{
+        font-size: 26px;
+        padding-left: 30px;
+    }
     .checkbutton{
         display: block;
     }
+
     ul{
         position: fixed;
         width: 100%;
@@ -125,31 +131,127 @@ a.active, a:hover{
 
 }
 
-/*SECTIONS*/
-section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10 rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
 
 
-/*HOME-SECTION*/
-#home{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(10, 1fr); 
-    width: 100%;
-    height: 100hv;
-}
-
-.home-item-1{
-    grid-area: 1 / 1 / 10 / 10;
-    border-radius: 10px;
-    z-index: 1;
+/* HOME-SECTION */
+#home {
     display: flex;
+    background-image: url(../images/beige.png);
+    border-radius: 20px;
+    padding: 40px 40px 0px 40px;
+    justify-content: space-between; /* Evenly space image and text */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
+
+.text-container{
+    flex: 1;
+    align-self: center;
+    margin-right: 40px; /* Adds spacing between text and image */
+}
+
+.image-container {
+    flex: 1;
+    align-self: flex-end;
+    margin-left: 100px;
+    position: relative;
+}
+
+.image-container img {
+    width: 100; /* Set the width to a percentage of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 90%; /* Limit the maximum height */
+    display: block; /* Remove any inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+
+
+/* RESPONSIVE STYLES */
+@media (max-width: 952px) {
+    #home {
+        flex-direction: column; 
+        padding: 20px 10px 10px 10px;
+    }
+    .image-container {
+        align-self: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .text-container {
+        margin-right: 0;
+        align-self: left;
+        width: 80%;
+    }
+    .text-container #text-1{
+        font-size:30px;
+        transition: 0.3s;
+    }
+    .text-container #text-2{
+        font-size:50px;
+        transition: 0.3s;
+    }
+    .text-container #text-3{
+        align-self: left;
+        font-size:18px;
+        transition: 0.3s;
+    }
+    .text-container #text-4{
+        align-self: left;
+        font-size:24px;
+        transition: 0.3s;
+    }
+    img{     
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 858px) {
+    #home {
+        flex-direction: column; 
+        padding:20px 10px 0px 10px;
+    }
+    .image-container {
+        align-self: center;
+        margin-top: 20px;
+    }
+    .text-container {
+        margin-right: 0;
+        align-self: left;
+        width: 100%;
+       
+    }
+    .text-container #text-1{
+        font-size:25px;
+        transition: 0.3s;
+        justify-self: flex-start;
+    }
+    .text-container #text-2{
+        font-size:30px;
+        transition: 0.3s;
+    }
+    .text-container #text-3{
+        align-self: left;
+        font-size:15px;
+        transition: 0.3s;
+    }
+    .text-container #text-4{
+        align-self: left;
+        font-size:20px;
+        transition: 0.3s;
+    }
+
+    img{     
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
 
 
  
