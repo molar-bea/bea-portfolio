@@ -1,80 +1,91 @@
+<!--ABOUT MEEE-->
 <section id="about" class="mt-9 mb-9 justify-center">
-        <div class="container-about">
-            <div class="item a-item-1" > 
-                <p class="text-2xl text-neutral-500 ml-6 mb-2">Get to know more...</p>
-                <h2 class="text-7xl font-black ml-6 mb-6 text-neutral-700">ABOUT ME</h2>
+    <div class="container-about">
+        <div class="item a-item-1" > 
+            <p class="text-2xl text-neutral-500 ml-6 mb-2">Get to know more...</p>
+            <h2 class="text-7xl font-black ml-6 mb-6 text-neutral-700">ABOUT ME</h2>
+        </div>
+
+        <div class="item a-item-2">
+            <div class="a-image-container border-3  border-neutral-500 rounded-lg shadow-xl">
+                <img src="../images/about-me-pic.jpg" alt="prof picture" class="w-fit rounded-lg">
             </div>
+            
+            <div class="about-text-container font-leagueSpartan text-neutral-500">
+                <p>
+                    Hey there! I'm Bea Rina Molar, straight from the coastal vibes of San Juan, 
+                    Hilongos, Leyte. Living by the beach was great, but my real passion was 
+                    diving into the world of futuristic tech! Even as a kid, I was fascinated by 
+                    all the amazing possibilities that technology could offer.
+                </p>
+                <p>           
+                    Right now, I'm focusing on being practical and honing my skills in web development. 
+                    Gotta start somewhere, right? But deep down, I’ve got this big dream of working 
+                    on a major tech innovation someday—something that can really make an impact. 
+                    Just taking it one step at a time!
+                </p>
+                <h3>My valuess and beliefs??....://</h3>
+                <p>Why do it today when you can do it tomorrow? (It’s all about pacing, right?) XD</p>
+                <p>
+                    I love and liked playing MOBA and other PvP games. 
+                    My game sense? Well, let's just say I’m more into the fun part than the winning part ;))
 
-            <div class="item a-item-2">
-                <div class="a-image-container border-4  border-neutral-500 rounded-lg shadow-xl">
-                    <img src="../images/about-me-pic.jpg" alt="prof picture" class="w-fit rounded-lg">
-                </div>    
-            </div>
+                    Procrastination? Yeah, that’s pretty much my constant companion. 
+                    But hey, we still get things done—eventually. It’s all about balancing the fun with the work 
+                    (okay, maybe more fun sometimes, pero balance pa rin naman 😅).
+                </p>
 
-            <div class="item a-item-3">
-                <p class="text-2xl text-neutral-500 mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates reprehenderit earum inventore totam similique nemo, 
-                    porro eos deleniti expedita ea error quaerat esse vero iste placeat odio ex fuga saepe.</p>
-
-                <p class="text-2xl text-neutral-500 mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates reprehenderit earum inventore totam similique nemo, 
-                    porro eos deleniti expedita ea error quaerat esse vero iste placeat odio ex fuga saepe.</p>
-
-                <p class="text-2xl text-neutral-500 mb-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates reprehenderit earum inventore totam similique nemo, 
-                    porro eos deleniti expedita ea error quaerat esse vero iste placeat odio ex fuga saepe.</p>
             </div>
         </div>
+
+    </div>
+
+</section>
+
+
+
+
+/*ABOUT SECTION*/
+#about{
+    display: grid;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.container-about{
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.a-item-1{
+    grid-row: span 1;
+    grid-column: span 10;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.a-item-2{
+    grid-area: 2 / 1 / 7 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
-    </section>
+}
 
+.a-image-container{
+    width: full;
+    height: full;
+    box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516);
+    overflow: hidden;
+}
 
-
-
-    ---------------------------------------------------------
-
-
-    #about{
-        display: grid;
-        justify-content: center; 
-        align-items: center;     
-    }
+.about-text-container{
+    font-size: 1.5rem;
+    margin-bottom: 6px;
     
-    .container-about{
-        display: grid;
-        grid-template-rows: repeat(10,1fr);
-        grid-template-columns: repeat(10,1fr);
-        width: 100%;
-        height: 100hv;
-    }
-    
-    .a-item-1{
-        grid-row: span 1;
-        grid-column: span 10;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items: center;
-    }
-    
-    .a-item-2{
-        grid-area: 2 / 1 / 5 / 5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    
-    .a-image-container{
-        width: 300px;
-        height: 300px;
-        box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516);
-        overflow: hidden;
-    }
-    .a-item-3{
-        grid-area: 2 / 6 / 5 / 10;
-        overflow: hidden;
-    }
+}
